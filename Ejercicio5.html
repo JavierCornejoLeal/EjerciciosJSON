@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Ejercicio 5 - Library</title>
+</head>
+<body>
+
+	<div style="background-color: mediumblue; color: white; padding: 10px;text-align: center;">
+
+		<h1>Creating an Object from a JSON String</h1>
+		<h2>1 Element</h2>
+
+	</div>
+
+	<div style="background-color: lightblue; padding: 10px">
+
+		<h3 id="title1"></h3>
+		<p id="descriptionAuthor1"></p>
+		<p id="descriptionStock1"></p>
+		<p id="descriptionStyles1"></p>
+
+		<script>
+			const txt1 = '{"title": "The Great Gatsby","author": "F. Scott Fitzgerald","stock": true,"literaryStyles": ["Realismo", "Romanticismo", "Modernismo"]}';
+			const obj1 = JSON.parse(txt1);
+
+			document.getElementById("title1").innerHTML = obj1.title;
+			document.getElementById("descriptionAuthor1").innerHTML = "Author: " + obj1.author;
+			document.getElementById("descriptionStock1").innerHTML = "Stock: " + obj1.stock;
+			document.getElementById("descriptionStyles1").innerHTML = "Literary Styles: " + obj1.literaryStyles;
+		</script>
+
+	</div>
+
+
+	<hr style="background-color: orange;" size="3px">
+
+
+	<div style="background-color: mediumblue; color: white; padding: 10px;text-align: center;">
+
+		<h1>Creating an Object from a JSON String</h1>
+		<h2>Array of 2 Elements</h2>
+
+	</div>
+
+	<div style="background-color: lightblue; padding: 10px">
+		
+		<!--Se muestra la información del 1er Libro-->
+		<h3 id="title2"></h3>
+		<p id="descriptionAuthor2"></p>
+		<p id="descriptionStock2"></p>
+		<p id="descriptionStyles2"></p>
+
+		<!--Se muestra la información del 2o Libro-->
+		<h3 id="title3"></h3>
+		<p id="descriptionAuthor3"></p>
+		<p id="descriptionStock3"></p>
+		<p id="descriptionStyles3"></p>
+
+		<script>
+			//Libro1
+			const txt2 = '[{"title": "The Great Gatsby","author": "F. Scott Fitzgerald","stock": true,"literaryStyles": ["Realismo", "Romanticismo", "Modernismo"]},{"title": "To Kill a Mockingbird","author": "Harper Lee","stock": false,"literaryStyles": ["Realismo", "Ficción social"]}]';
+
+	        const obj2 = JSON.parse(txt2);
+
+	        const firstBook = obj2[0];
+
+	        document.getElementById("title2").innerHTML = firstBook.title;
+	        document.getElementById("descriptionAuthor2").innerHTML = "Author: " + firstBook.author;
+	        document.getElementById("descriptionStock2").innerHTML = "Stock: " + firstBook.stock;
+	        document.getElementById("descriptionStyles2").innerHTML = "Literary Styles: " + firstBook.literaryStyles;
+
+	        //Libro2
+	        const secondBook = obj2[1];
+
+	        document.getElementById("title3").innerHTML = secondBook.title;
+	        document.getElementById("descriptionAuthor3").innerHTML = "Author: " + secondBook.author;
+	        document.getElementById("descriptionStock3").innerHTML = "Stock: " + secondBook.stock;
+	        document.getElementById("descriptionStyles3").innerHTML = "Literary Styles: " + secondBook.literaryStyles;
+	    </script>
+
+    </div>
+    
+
+</body>
+
+</html>

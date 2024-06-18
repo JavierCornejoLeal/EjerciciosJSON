@@ -1,0 +1,33 @@
+{
+    "Users":
+        [
+            {
+                "full-name": "Pepito Palotes Ramirez",
+                "age": 22,
+                "email": "pepitopalotes@gmail.com",
+                "address":
+                    {
+                        "street": "Marserena",
+                        "number": 23,
+                        "city": "California",
+                        "country": "CaliforniaLand"
+                    },                   
+                "list_of_interests": ["technology", "music", "travel"],
+                "activityStatus": true
+            },
+            {
+                "full-name": "Jonathan Gabiria Romani",
+                "age": 14,
+                "email": "jonnygabiria@gmail.com",
+                "address":
+                    {
+                        "street": "Santa Maria",
+                        "number": 53,
+                        "city": "Ciudad de Mexico",
+                        "country": "Mexico"
+                    },                   
+                "list_of_interests": ["reading", "cooking", "hiking"],
+                "activityStatus": false
+            }
+        ]   
+}

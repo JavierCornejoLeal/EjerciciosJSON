@@ -1,0 +1,29 @@
+{
+    "secondary-school":{
+        "name": "IES Abastos",
+        "web": "http://www.iesabastos.org",
+        "cycles":[
+            {
+                "id": "NISA",
+                "name": "Network Information System Administration",
+                "grade": "Higher",
+                "degreeTitle": "year",
+                "year": 2009
+            },
+            {
+                "id": "DAW",
+                "name": "Web Application Development",
+                "grade": "Higher",
+                "degreeTitle": "year",
+                "year": 2010
+            },
+            {
+                "id": "MSN",
+                "name": "Microcomputer Systems and Networks",
+                "grade": "Intermediate",
+                "degreeTitle": "year",
+                "year": 2008
+            }
+        ]        
+    }
+}

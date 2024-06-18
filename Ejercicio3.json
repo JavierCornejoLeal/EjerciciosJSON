@@ -1,0 +1,16 @@
+{
+	"books": [
+		{
+			"title": "The Great Gatsby",
+			"author": "F. Scott Fitzgerald",
+			"stock": true,
+			"literaryStyles": ["Realism", "Romanticism"]
+		},
+		{
+			"title": "To Kill a Mockingbird",
+			"author": "Harper Lee",
+			"stock": false,
+			"literaryStyles": ["Social Realism", "Southern Gothic"]
+		}
+	]
+}
